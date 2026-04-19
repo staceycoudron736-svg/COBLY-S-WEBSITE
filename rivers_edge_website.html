@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River's Edge Tree & Lawn Care | Davenport, IA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+            color: white;
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.2rem;
+        }
+        
+        .logo p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .contact-info p {
+            font-size: 0.8rem;
+            margin-top: 0.3rem;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(45, 80, 22, 0.75), rgba(45, 80, 22, 0.75)), 
+                        url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .guarantee-badge {
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            margin-top: 1rem;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        
+        .stat-box {
+            text-align: center;
+            min-width: 100px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #a8d88f;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+        }
+        
+        .emergency-banner {
+            background: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        
+        .emergency-banner small {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: normal;
+            margin-top: 0.3rem;
+            opacity: 0.95;
+        }
+        
+        .services-section {
+            padding: 2.5rem 1rem;
+            background: #f9f9f9;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #2d5016;
+            margin-bottom: 2rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .service-card h3 {
+            color: #2d5016;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .service-card li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+        
+        .service-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4a7c2c;
+            font-weight: bold;
+        }
+        
+        .combo-section {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+        
+        .combo-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .combo-section p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #2d5016;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .discount-box {
+            background: rgba(255,255,255,0.15);
+            padding: 1.2rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .discount-box h4 {
+            color: #a8d88f;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .exclusions {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            border-radius: 5px;
+        }
+        
+        .exclusions h3 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .exclusions p {
+            color: #856404;
+            font-size: 0.95rem;
+        }
+        
+        .reviews-section {
+            padding: 2.5rem 1rem;
+            background: white;
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.2rem;
+            max-width: 1200px;
+            margin: 2rem auto 0;
+        }
+        
+        .review-card {
+            background: #f9f9f9;
+            padding: 1.2rem;
+            border-radius: 10px;
+            border-left: 4px solid #4a7c2c;
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .review-name {
+            font-weight: bold;
+            color: #2d5016;
+            font-size: 1rem;
+        }
+        
+        .review-stars {
+            color: #ffc107;
+            font-size: 1rem;
+        }
+        
+        .review-text {
+            color: #555;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+        
+        .story-section {
+            padding: 2.5rem 1rem;
+            background: #f9f9f9;
+        }
+        
+        .story-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .story-content p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        .story-content p:last-child {
+            margin-bottom: 0;
+        }
+        
+        footer {
+            background: #2d5016;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        footer h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer p {
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                padding: 0 2rem;
+            }
+            
+            .logo h1 {
+                font-size: 1.8rem;
+            }
+            
+            .contact-info a {
+                font-size: 1.3rem;
+            }
+            
+            .hero {
+                padding: 5rem 2rem;
+            }
+            
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .stat-number {
+                font-size: 3rem;
+            }
+            
+            .stat-label {
+                font-size: 1rem;
+            }
+            
+            .stats {
+                gap: 2.5rem;
+            }
+            
+            .services-section,
+            .reviews-section,
+            .story-section {
+                padding: 4rem 2rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+                margin-bottom: 3rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+            }
+            
+            .service-card {
+                padding: 2rem;
+            }
+            
+            .service-icon {
+                font-size: 3rem;
+            }
+            
+            .service-card h3 {
+                font-size: 1.5rem;
+            }
+            
+            .service-card li {
+                font-size: 1rem;
+            }
+            
+            .combo-section {
+                padding: 4rem 2rem;
+            }
+            
+            .combo-section h2 {
+                font-size: 2.2rem;
+            }
+            
+            .combo-section p {
+                font-size: 1.2rem;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .story-content {
+                padding: 2.5rem;
+            }
+            
+            .story-content p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .reviews-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>River's Edge</h1>
+                    <p>Tree & Lawn Care</p>
+                </div>
+                <div class="contact-info">
+                    <a href="tel:563-555-0100">📞 Call Now</a>
+                    <p>Free Estimates</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="emergency-banner">
+        🚨 24/7 EMERGENCY SERVICE AVAILABLE
+        <small>*Higher rates apply after hours, weekends, and holidays</small>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Davenport's Trusted Tree & Lawn Care Experts</h2>
+            <p class="hero-subtitle">Over 20 Years of Excellence in the Quad Cities</p>
+            <div class="guarantee-badge">
+                ✓ Guaranteed Satisfaction or We Make It Right - No Questions Asked
+            </div>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">5.0★</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Professional Services</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌲</div>
+                    <h3>Complete Tree Services</h3>
+                    <ul>
+                        <li>Tree Trimming & Pruning</li>
+                        <li>Tree Removal</li>
+                        <li>Stump Grinding</li>
+                        <li>Cable Bracing</li>
+                        <li>Tree Health Assessment</li>
+                        <li>Disease & Pest Management</li>
+                        <li>24-Hour Emergency Service</li>
+                        <li>Storm Damage Response</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Professional Lawn Care</h3>
+                    <ul>
+                        <li>Core Aeration (Spring & Fall)</li>
+                        <li>Grub Control & Prevention</li>
+                        <li>Mole Removal & Control</li>
+                        <li>Fertilization Programs</li>
+                        <li>Weed Control Treatments</li>
+                        <li>Overseeding Services</li>
+                        <li>Soil Health Analysis</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⭐</div>
+                    <h3>Combo Care Packages</h3>
+                    <ul>
+                        <li>Lawn + Tree Care Bundles</li>
+                        <li>Seasonal Maintenance Plans</li>
+                        <li>Year-Round Property Care</li>
+                        <li>Customized Schedules</li>
+                        <li>Cost-Saving Packages</li>
+                        <li>Priority Scheduling</li>
+                        <li>Complete Property Health</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exclusions">
+                <h3>⚠️ Please Note:</h3>
+                <p><strong>We specialize in tree and lawn health services.</strong> We do NOT offer lawn mowing or hedge trimming. Our focus is on specialized care that keeps your trees healthy and your lawn thriving from the roots up.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="combo-section">
+        <div class="container">
+            <h2>Save with Our Combo Packages</h2>
+            <p>Get comprehensive tree and lawn care at discounted rates. Our combo packages provide year-round maintenance that keeps your entire property healthy and beautiful.</p>
+            <a href="tel:563-555-0100" class="cta-button">Get Your Free Estimate Today</a>
+            
+            <div class="discount-box">
+                <h4>🇺🇸 SPECIAL DISCOUNTS AVAILABLE</h4>
+                <p>We proudly offer discounts for U.S. Veterans, Active-Duty Military, and active Church Members. Thank you for your service and dedication to our community!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Jayne McDaniel</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Colby is AMAZING! He was prompt, honest, did exactly what we asked for at a fair price. Beat all of the competition. Everything was cleaned up and hauled away in record time."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Gary B.</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Very professional and thoroughly explained what he was doing. Very polite and responsive to getting the job done on time. His quote was very reasonable and I highly recommend him for tree services."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Rick H.</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Colby has done several jobs for me and all were done very well."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Marty H.</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"He was very polite and professional. Got in and did the job great. Would hire him again."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Dustin Jungvirt</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Great company and fair amazing work."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-name">Nayo L.</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Great service. Highly recommend."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-content">
+                <p>My roots run deep in the Quad Cities. For the first ten years of my life, I lived on a farm, where the outdoors simply became a part of me, and a well-kept lawn felt like a natural extension of home. What inspired me to start my own business was the unmatched work ethic demonstrated by my father, who owned and operated successful businesses. Additionally, my stepfather, a certified arborist, showed me the importance of combining that work ethic with specialized knowledge. And, I must give credit to my mother, whose absolute love for nature, animals, and all things green was a constant source of inspiration. Her 'magical touch' with gardening, trees, and especially flowers, showed me the beauty, importance, and pride in nurturing what surrounds you.</p>
+
+                <p>Growing up in the Quad City area, I remember Sunday mornings, the sound of lawnmowers, the sense of community as everyone took pride in their homes and lawns. Majestic oaks and vibrant green lawns weren't just scenery; they represented the pride in a well-kept home and a well-kept lawn, a feeling that resonated throughout the entire neighborhood. It wasn't just about trees and grass; it was about the feeling of home, right here in the Quad Cities.</p>
+
+                <p>Seeing the impact my parents and stepfather had on their surroundings and community, I decided to dedicate myself to learning the best practices in arboriculture and landscaping. To further enhance my expertise, I am currently studying to become a certified arborist, ensuring that River's Edge always provides the most knowledgeable and up-to-date care. I started helping neighbors, and quickly realized this wasn't just a job, it was a way to truly serve my community.</p>
+
+                <p>That's how River's Edge was born. It's built on a foundation of integrity, expertise, and a genuine love for the outdoors. We take immense pride in our craftsmanship, ensuring every tree is trimmed with precision, and every lawn is cared for with pride. Our greatest satisfaction comes from seeing the smiles on our customers' faces, knowing we've helped enhance the beauty and safety of their homes.</p>
+
+                <p>As a local family-owned business, we're deeply invested in the well-being of our community. We strive to not only provide exceptional service but also build lasting relationships with our clients. At River's Edge, we adhere to the highest level of customer satisfaction, prioritizing the health and safety of our clients. We're not just maintaining landscapes; we're nurturing the heart of the Quad Cities, one yard at a time. That's a commitment we take pride in.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>River's Edge Tree & Lawn Care</h2>
+            <p>Serving Davenport and the Quad Cities</p>
+            <p>📞 24/7 Emergency Service Available</p>
+            <p style="margin-top: 1.5rem; opacity: 0.8;">©Copyright River's Edge. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
