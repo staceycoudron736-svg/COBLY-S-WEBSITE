@@ -3,657 +3,1585 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>River's Edge Tree & Lawn Care | Davenport, IA</title>
+    <title>Tree & Lawn Care Davenport IA | River's Edge | Quad Cities</title>
+    <meta name="description" content="Expert tree removal, trimming, stump grinding & professional lawn health care in Davenport, Iowa and the Quad Cities. 20+ years of certified, science-based service. Free estimates.">
+    <meta name="keywords" content="tree removal Davenport Iowa, tree service Quad Cities, lawn care Davenport IA, stump grinding 52804, tree trimming Bettendorf, lawn fertilization Quad Cities, certified arborist Davenport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
+
+        :root {
+            --green: #2D6A4F;
+            --green-deep: #1F4E36;
+            --green-light: #5A8C6E;
+            --green-soft: #E8F0EA;
+            --cream: #FAF8F2;
+            --cream-deep: #F2EEE3;
+            --stone: #E5E1D6;
+            --ink: #2A2A2A;
+            --ink-soft: #4B5563;
+            --muted: #6B7280;
+            --navy: #1A2937;
         }
-        
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--ink);
+            background: var(--cream);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── HEADER ── */
         header {
-            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
-            color: white;
-            padding: 1.2rem 0;
+            background: #fff;
+            color: var(--ink);
+            padding: 1.1rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+            border-bottom: 1px solid var(--stone);
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 1rem;
+            padding: 0 1.5rem;
         }
-        
+
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 1rem;
         }
-        
+
         .logo h1 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 0.2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.55rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            color: var(--green-deep);
+            margin-bottom: 0.15rem;
+            line-height: 1.05;
+            text-transform: uppercase;
         }
-        
+
+        .logo h1 .apostrophe-accent {
+            color: var(--green-light);
+        }
+
         .logo p {
-            font-size: 0.85rem;
-            opacity: 0.9;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--green);
         }
-        
-        .contact-info {
-            text-align: right;
-        }
-        
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: bold;
-            display: block;
-        }
-        
-        .contact-info p {
-            font-size: 0.8rem;
-            margin-top: 0.3rem;
-        }
-        
-        .hero {
-            background: linear-gradient(rgba(45, 80, 22, 0.75), rgba(45, 80, 22, 0.75)), 
-                        url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-        
-        .hero h2 {
-            font-size: 1.8rem;
-            margin-bottom: 0.8rem;
-            line-height: 1.3;
-        }
-        
-        .hero-subtitle {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .guarantee-badge {
-            background: rgba(255,255,255,0.2);
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            border-radius: 30px;
-            margin-top: 1rem;
-            font-weight: bold;
-            border: 2px solid white;
-        }
-        
-        .stats {
+
+        .header-cta {
             display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
+            align-items: center;
+            gap: 0.75rem;
         }
-        
-        .stat-box {
+
+        .call-button {
+            background: var(--green);
+            color: #fff;
+            padding: 0.8rem 1.4rem;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            letter-spacing: 0.01em;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 12px rgba(45,106,79,0.3);
+            font-family: 'Inter', sans-serif;
+            white-space: nowrap;
+        }
+
+        .call-button:hover {
+            background: var(--green-deep);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 16px rgba(45,106,79,0.4);
+        }
+
+        .header-estimates {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            text-align: right;
+            display: none;
+        }
+
+        /* ── AVAILABILITY NOTICE ── */
+        .availability-notice {
+            background: var(--green-deep);
+            color: #fff;
             text-align: center;
-            min-width: 100px;
+            padding: 0.7rem 1rem;
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
         }
-        
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #a8d88f;
+
+        .availability-notice strong {
+            color: #fff;
+            font-weight: 700;
         }
-        
-        .stat-label {
-            font-size: 0.85rem;
+
+        .availability-notice small {
+            display: inline;
+            font-size: 0.76rem;
+            opacity: 0.85;
+            margin-left: 0.5rem;
         }
-        
-        .emergency-banner {
-            background: #d32f2f;
-            color: white;
+
+        /* ── HERO (light, clean, floating) ── */
+        .hero {
+            background:
+                radial-gradient(ellipse at top, rgba(232,240,234,0.6) 0%, transparent 60%),
+                linear-gradient(180deg, #fff 0%, var(--cream) 100%);
+            color: var(--ink);
+            padding: 5rem 1.5rem 4rem;
             text-align: center;
-            padding: 1rem;
-            font-weight: bold;
-            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
         }
-        
-        .emergency-banner small {
-            display: block;
-            font-size: 0.75rem;
-            font-weight: normal;
-            margin-top: 0.3rem;
-            opacity: 0.95;
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(90,140,110,0.08) 0%, transparent 70%);
+            pointer-events: none;
         }
-        
-        .services-section {
-            padding: 2.5rem 1rem;
-            background: #f9f9f9;
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(45,106,79,0.06) 0%, transparent 70%);
+            pointer-events: none;
         }
-        
-        .section-title {
-            text-align: center;
-            font-size: 1.8rem;
-            color: #2d5016;
+
+        .hero-eyebrow {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 1.2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 0.7rem;
+            line-height: 1.15;
+            color: var(--navy);
+            letter-spacing: -0.015em;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 1.4rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h2 .accent {
+            color: var(--green);
+        }
+
+        .hero-subtitle {
+            font-size: 1.05rem;
+            font-weight: 400;
             margin-bottom: 2rem;
+            color: var(--ink-soft);
+            letter-spacing: 0.01em;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
         }
-        
-        .services-grid {
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-btn-primary {
+            background: var(--green);
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            letter-spacing: 0.02em;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 18px rgba(45,106,79,0.3);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-btn-primary:hover {
+            background: var(--green-deep);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 22px rgba(45,106,79,0.4);
+        }
+
+        .hero-btn-secondary {
+            background: transparent;
+            color: var(--green-deep);
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            letter-spacing: 0.02em;
+            transition: all 0.25s ease;
+            border: 2px solid var(--green);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-btn-secondary:hover {
+            background: var(--green);
+            color: #fff;
+        }
+
+        .guarantee-badge {
+            display: inline-block;
+            border: 1px solid var(--green);
+            color: var(--green-deep);
+            padding: 0.55rem 1.4rem;
+            border-radius: 2px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            background: rgba(255,255,255,0.5);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ── TRUSTED / PROOF SECTION ── */
+        .trust-section {
+            padding: 4.5rem 1.5rem;
+            background: #fff;
+        }
+
+        .trust-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .eyebrow {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 0.8rem;
+        }
+
+        .trust-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 0 auto 3rem;
+            padding: 2rem;
+            background: var(--green-soft);
+            border-radius: 12px;
+            border: 1px solid rgba(45,106,79,0.15);
+        }
+
+        .trust-stat {
+            text-align: center;
+            padding: 0.8rem 0.5rem;
+            border-right: 1px solid rgba(45,106,79,0.15);
+        }
+
+        .trust-stat:last-child {
+            border-right: none;
+        }
+
+        .trust-stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--green-deep);
+            line-height: 1;
+            letter-spacing: -0.02em;
+        }
+
+        .trust-stat-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-top: 0.5rem;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.015em;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 0.78rem;
+            color: var(--muted);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .trust-reviews {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 1.5rem;
+            gap: 1.25rem;
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
+        .trust-review {
+            background: #fff;
+            padding: 1.75rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--stone);
+            box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+            position: relative;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .trust-review:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(0,0,0,0.07);
+            border-color: var(--green-light);
+        }
+
+        .trust-review .quote-mark {
+            position: absolute;
+            top: 0.4rem;
+            left: 0.9rem;
+            font-family: 'Montserrat', serif;
+            font-size: 3.5rem;
+            color: var(--green);
+            opacity: 0.2;
+            line-height: 1;
+            font-weight: 900;
+        }
+
+        .review-stars {
+            color: var(--green);
+            font-size: 1rem;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.7rem;
+            padding-top: 1rem;
+        }
+
+        .review-text {
+            color: var(--ink-soft);
+            line-height: 1.65;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-name {
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--green-deep);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .trust-cta-row {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .view-all-link {
+            color: var(--green-deep);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--green);
+            padding-bottom: 3px;
+            font-family: 'Montserrat', sans-serif;
+            transition: color 0.2s ease;
+        }
+
+        .view-all-link:hover {
+            color: var(--green);
+        }
+
+        /* ── SOCIAL / REVIEW SHARE BAR ── */
+        .review-share-bar {
+            margin-top: 2.5rem;
+            text-align: center;
+            padding: 1.6rem;
+            background: var(--cream);
+            border-radius: 8px;
+            border: 1px solid var(--stone);
+        }
+
+        .review-share-bar h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--green-deep);
+            margin-bottom: 1rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #fff;
+            color: var(--green-deep);
+            border: 2px solid var(--stone);
+            transition: all 0.25s ease;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 0.8rem;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            border-color: var(--green);
+            background: var(--green);
+            color: #fff;
+            box-shadow: 0 6px 16px rgba(45,106,79,0.3);
+        }
+
+        .social-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* ── SERVICES ── */
+        .services-section {
+            padding: 5rem 1.5rem;
+            background: var(--cream);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.8rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         .service-card {
             background: white;
-            padding: 1.5rem;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 28px rgba(45,106,79,0.07);
+            overflow: hidden;
+            border: 1px solid var(--stone);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--green);
         }
-        
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 44px rgba(45,106,79,0.13);
+        }
+
+        .service-card-body {
+            padding: 2rem 1.8rem;
+        }
+
         .service-icon {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 0.8rem;
         }
-        
+
         .service-card h3 {
-            color: #2d5016;
+            color: var(--green-deep);
+            font-family: 'Montserrat', sans-serif;
             font-size: 1.3rem;
-            margin-bottom: 0.8rem;
+            font-weight: 800;
+            margin-bottom: 1.1rem;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
         }
-        
+
         .service-card ul {
             list-style: none;
             padding-left: 0;
         }
-        
+
         .service-card li {
-            padding: 0.4rem 0;
+            padding: 0.55rem 0;
             padding-left: 1.5rem;
             position: relative;
             font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--ink);
+            border-bottom: 1px solid var(--cream);
         }
-        
+
+        .service-card li:last-child {
+            border-bottom: none;
+        }
+
         .service-card li:before {
-            content: "✓";
+            content: "";
             position: absolute;
             left: 0;
-            color: #4a7c2c;
-            font-weight: bold;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 2px;
+            background: var(--green);
         }
-        
-        .combo-section {
-            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
-            color: white;
-            padding: 2.5rem 1rem;
+
+        /* ── BEYOND THE BLADE — light cream version ── */
+        .beyond-blade {
+            margin: 3.5rem auto 0;
+            max-width: 980px;
+            background: #fff;
+            color: var(--ink);
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(45,106,79,0.10);
+            position: relative;
+            border-left: 6px solid var(--green);
+        }
+
+        .beyond-blade .eyebrow {
+            color: var(--green);
+            text-align: center;
+            margin-bottom: 0.6rem;
+        }
+
+        .beyond-blade h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: var(--navy);
+            text-align: center;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.015em;
+            line-height: 1.25;
+        }
+
+        .beyond-blade h3 .highlight {
+            color: var(--green);
+        }
+
+        .beyond-blade p {
+            color: var(--ink-soft);
+            font-size: 1rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .beyond-blade p strong {
+            color: var(--green-deep);
+            font-weight: 700;
+        }
+
+        /* ── FACTS SECTION (light, cream theme) ── */
+        .facts-section {
+            padding: 5rem 1.5rem;
+            background: #fff;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .fact-card {
+            background: var(--cream);
+            border: 1px solid var(--stone);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            gap: 1.2rem;
+            align-items: flex-start;
+            transition: all 0.25s ease;
+        }
+
+        .fact-card:hover {
+            background: var(--green-soft);
+            border-color: var(--green-light);
+            transform: translateY(-2px);
+        }
+
+        .fact-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: var(--green);
+            line-height: 1;
+            flex-shrink: 0;
+            min-width: 2.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .fact-text {
+            font-size: 0.93rem;
+            color: var(--ink-soft);
+            line-height: 1.65;
+            padding-top: 0.1rem;
+        }
+
+        .fact-text strong {
+            color: var(--green-deep);
+            font-weight: 700;
+        }
+
+        /* ── CARE PLANS ── */
+        .plans-section {
+            background: var(--cream);
+            padding: 5rem 1.5rem;
             text-align: center;
         }
-        
-        .combo-section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
+
+        .plans-section .plans-subtitle-large {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-size: 1.4rem;
+            color: var(--green);
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            margin-bottom: 2.2rem;
+            margin-top: -0.3rem;
         }
-        
-        .combo-section p {
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
+
+        .plans-section p.lead {
+            font-size: 1.08rem;
+            color: var(--ink-soft);
+            margin-bottom: 2.2rem;
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.85;
         }
-        
+
+        .plans-section p.lead strong {
+            color: var(--green-deep);
+        }
+
         .cta-button {
             display: inline-block;
-            background: white;
-            color: #2d5016;
-            padding: 1rem 2rem;
+            background: var(--green);
+            color: #fff;
+            padding: 1.1rem 2.5rem;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1rem;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 2px solid var(--green);
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 4px 16px rgba(45,106,79,0.3);
         }
-        
+
         .cta-button:hover {
-            transform: scale(1.05);
+            background: var(--green-deep);
+            border-color: var(--green-deep);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(45,106,79,0.4);
         }
-        
+
         .discount-box {
-            background: rgba(255,255,255,0.15);
-            padding: 1.2rem;
-            border-radius: 10px;
-            margin-top: 1.5rem;
-            border: 2px solid rgba(255,255,255,0.3);
-        }
-        
-        .discount-box h4 {
-            color: #a8d88f;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-        
-        .exclusions {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 1rem;
-            margin: 2rem auto;
-            max-width: 900px;
-            border-radius: 5px;
-        }
-        
-        .exclusions h3 {
-            color: #856404;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-        
-        .exclusions p {
-            color: #856404;
-            font-size: 0.95rem;
-        }
-        
-        .reviews-section {
-            padding: 2.5rem 1rem;
             background: white;
+            padding: 1.8rem;
+            border-radius: 8px;
+            margin-top: 2.5rem;
+            border: 1px solid var(--stone);
+            border-left: 4px solid var(--green);
+            box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
-        .reviews-grid {
+
+        .discount-box h4 {
+            color: var(--green-deep);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .discount-box p {
+            color: var(--ink-soft);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .discount-box p strong {
+            color: var(--green);
+        }
+
+        .discount-box .green-rule {
+            width: 40px;
+            height: 2px;
+            background: var(--green);
+            margin: 0.8rem auto;
+        }
+
+        /* ── OUR STORY ── */
+        .story-section {
+            padding: 5rem 1.5rem;
+            background: #fff;
+        }
+
+        .story-content {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        .story-content > p.story-intro {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            color: var(--green-deep);
+            margin-bottom: 2.5rem;
+            text-align: center;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .story-block {
+            margin-bottom: 2.5rem;
+        }
+
+        .story-block h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--green-deep);
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+        .story-block h3 .story-icon {
+            color: var(--green);
+            font-size: 1.6rem;
+        }
+
+        .story-block p {
+            color: var(--ink-soft);
+            font-size: 1rem;
+            line-height: 1.85;
+            margin-bottom: 1rem;
+        }
+
+        .story-pillars {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1.2rem;
-            max-width: 1200px;
-            margin: 2rem auto 0;
+            margin-top: 1rem;
         }
-        
-        .review-card {
-            background: #f9f9f9;
-            padding: 1.2rem;
-            border-radius: 10px;
-            border-left: 4px solid #4a7c2c;
+
+        .pillar-card {
+            background: var(--cream);
+            border-left: 4px solid var(--green);
+            padding: 1.2rem 1.4rem;
+            border-radius: 0 8px 8px 0;
+            transition: transform 0.25s ease;
         }
-        
-        .review-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.8rem;
-            flex-wrap: wrap;
-            gap: 0.5rem;
+
+        .pillar-card:hover {
+            transform: translateX(4px);
+            background: var(--green-soft);
         }
-        
-        .review-name {
-            font-weight: bold;
-            color: #2d5016;
-            font-size: 1rem;
-        }
-        
-        .review-stars {
-            color: #ffc107;
-            font-size: 1rem;
-        }
-        
-        .review-text {
-            color: #555;
-            line-height: 1.5;
+
+        .pillar-card h4 {
+            font-family: 'Montserrat', sans-serif;
             font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--green);
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
-        
-        .story-section {
-            padding: 2.5rem 1rem;
-            background: #f9f9f9;
-        }
-        
-        .story-content {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .story-content p {
-            margin-bottom: 1rem;
-            line-height: 1.7;
+
+        .pillar-card p {
+            color: var(--ink-soft);
             font-size: 0.95rem;
-        }
-        
-        .story-content p:last-child {
+            line-height: 1.65;
             margin-bottom: 0;
         }
-        
+
+        .no-mowers-callout {
+            background: var(--green-soft);
+            color: var(--green-deep);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 1.5rem 0;
+            border: 2px solid var(--green);
+        }
+
+        .no-mowers-callout .callout-tag {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 0.6rem;
+        }
+
+        .no-mowers-callout .callout-headline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--green-deep);
+            line-height: 1.25;
+        }
+
+        .no-mowers-callout .callout-headline span {
+            color: var(--green);
+        }
+
+        .promise-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+        }
+
+        .promise-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.85rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--stone);
+            font-size: 1rem;
+            color: var(--ink-soft);
+            line-height: 1.65;
+        }
+
+        .promise-list li:last-child {
+            border-bottom: none;
+        }
+
+        .promise-list .check {
+            background: var(--green);
+            color: #fff;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 0.75rem;
+            font-weight: 900;
+            margin-top: 3px;
+        }
+
+        .promise-list strong {
+            color: var(--green-deep);
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .story-closing {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding: 2rem 1rem;
+            border-top: 1px solid var(--stone);
+        }
+
+        .story-closing p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--green-deep);
+            line-height: 1.5;
+            max-width: 640px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .story-closing p .accent {
+            color: var(--green);
+        }
+
+        /* ── FOOTER ── */
         footer {
-            background: #2d5016;
+            background: var(--green-deep);
             color: white;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 3rem 1.5rem 2.5rem;
         }
-        
-        footer h2 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+
+        footer .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
         }
-        
+
+        footer .footer-tagline {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 1rem;
+        }
+
         footer p {
             font-size: 0.9rem;
-            margin-top: 0.5rem;
+            color: rgba(255,255,255,0.78);
+            margin-top: 0.4rem;
         }
-        
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        footer a:hover {
+            opacity: 0.85;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 0.7rem;
+            margin: 1.4rem auto;
+        }
+
+        .footer-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            transition: all 0.2s ease;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 0.7rem;
+        }
+
+        .footer-social a:hover {
+            background: #fff;
+            color: var(--green-deep);
+            border-color: #fff;
+        }
+
+        footer .green-rule {
+            width: 40px;
+            height: 1px;
+            background: rgba(255,255,255,0.4);
+            margin: 1.2rem auto;
+        }
+
+        footer .copyright {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.5);
+            margin-top: 1.5rem;
+        }
+
+        footer .service-area {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.65);
+            margin-top: 1rem;
+            line-height: 1.6;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ── STICKY FLOATING CALL BUTTON ── */
+        .sticky-call {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 999;
+            background: var(--green);
+            color: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 0.95rem;
+            text-decoration: none;
+            box-shadow: 0 6px 22px rgba(45,106,79,0.5), 0 2px 8px rgba(0,0,0,0.12);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            letter-spacing: 0.02em;
+            transition: all 0.25s ease;
+            border: 2px solid #fff;
+        }
+
+        .sticky-call:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 28px rgba(45,106,79,0.6), 0 4px 12px rgba(0,0,0,0.18);
+            background: var(--green-deep);
+        }
+
+        .sticky-call-icon {
+            font-size: 1.1rem;
+            animation: gentle-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes gentle-pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (min-width: 600px) {
+            .trust-stats {
+                grid-template-columns: repeat(4, 1fr);
+                padding: 2.4rem 1.5rem;
+            }
+            .trust-reviews {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .story-pillars {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
         @media (min-width: 768px) {
-            .container {
-                padding: 0 2rem;
-            }
-            
-            .logo h1 {
-                font-size: 1.8rem;
-            }
-            
-            .contact-info a {
-                font-size: 1.3rem;
-            }
-            
-            .hero {
-                padding: 5rem 2rem;
-            }
-            
-            .hero h2 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.3rem;
-            }
-            
-            .stat-number {
-                font-size: 3rem;
-            }
-            
-            .stat-label {
-                font-size: 1rem;
-            }
-            
-            .stats {
-                gap: 2.5rem;
-            }
-            
-            .services-section,
-            .reviews-section,
-            .story-section {
-                padding: 4rem 2rem;
-            }
-            
-            .section-title {
-                font-size: 2.2rem;
-                margin-bottom: 3rem;
-            }
-            
+            .logo h1 { font-size: 1.95rem; }
+            .header-estimates { display: block; }
+            .hero { padding: 7rem 2rem 6rem; }
+            .hero h2 { font-size: 3rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+            .hero-tagline { font-size: 1.05rem; }
+
+            .trust-stat-number { font-size: 3rem; }
+            .trust-stat-label { font-size: 0.78rem; }
+
             .services-grid {
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 gap: 2rem;
             }
-            
-            .service-card {
-                padding: 2rem;
-            }
-            
-            .service-icon {
-                font-size: 3rem;
-            }
-            
-            .service-card h3 {
-                font-size: 1.5rem;
-            }
-            
-            .service-card li {
-                font-size: 1rem;
-            }
-            
-            .combo-section {
-                padding: 4rem 2rem;
-            }
-            
-            .combo-section h2 {
-                font-size: 2.2rem;
-            }
-            
-            .combo-section p {
-                font-size: 1.2rem;
-                max-width: 800px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            
-            .reviews-grid {
+
+            .facts-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 1.5rem;
             }
-            
-            .story-content {
-                padding: 2.5rem;
+
+            .section-title { font-size: 2.4rem; }
+            .fact-number { font-size: 2rem; }
+
+            .beyond-blade { padding: 3.5rem 3rem; }
+            .beyond-blade h3 { font-size: 2.1rem; }
+            .beyond-blade p { font-size: 1.08rem; }
+
+            .no-mowers-callout .callout-headline { font-size: 1.9rem; }
+
+            .plans-section .plans-subtitle-large { font-size: 1.7rem; }
+
+            .story-block h3 { font-size: 1.6rem; }
+        }
+
+        @media (min-width: 1024px) {
+            .trust-reviews {
+                grid-template-columns: repeat(3, 1fr);
             }
-            
-            .story-content p {
-                font-size: 1rem;
+
+            .facts-grid {
+                grid-template-columns: repeat(4, 1fr);
             }
         }
-        
-        @media (min-width: 1024px) {
-            .reviews-grid {
-                grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: 520px) {
+            .header-content {
+                flex-wrap: wrap;
+            }
+            .call-button {
+                padding: 0.65rem 1rem;
+                font-size: 0.85rem;
+            }
+            .logo h1 { font-size: 1.3rem; }
+            .logo p { font-size: 0.62rem; letter-spacing: 0.18em; }
+            .sticky-call {
+                bottom: 1rem;
+                right: 1rem;
+                padding: 0.85rem 1.2rem;
+                font-size: 0.88rem;
             }
         }
     </style>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>River's Edge</h1>
-                    <p>Tree & Lawn Care</p>
+                    <h1>River<span class="apostrophe-accent">'</span>s Edge</h1>
+                    <p>Tree &amp; Lawn Care &nbsp;·&nbsp; Davenport, IA</p>
                 </div>
-                <div class="contact-info">
-                    <a href="tel:563-555-0100">📞 Call Now</a>
-                    <p>Free Estimates</p>
+                <div class="header-cta">
+                    <div class="header-estimates">Free<br>Estimates</div>
+                    <a href="tel:5633201948" class="call-button" aria-label="Call River's Edge at 563-320-1948">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        (563) 320-1948
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="emergency-banner">
-        🚨 24/7 EMERGENCY SERVICE AVAILABLE
-        <small>*Higher rates apply after hours, weekends, and holidays</small>
+    <!-- AVAILABILITY NOTICE -->
+    <div class="availability-notice">
+        <strong>24/7 Emergency Tree Service in the Quad Cities</strong> — We're here when storms hit and trees fall.
+        <small>After-hours, weekend &amp; holiday rates apply.</small>
     </div>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="container">
-            <h2>Davenport's Trusted Tree & Lawn Care Experts</h2>
-            <p class="hero-subtitle">Over 20 Years of Excellence in the Quad Cities</p>
-            <div class="guarantee-badge">
-                ✓ Guaranteed Satisfaction or We Make It Right - No Questions Asked
+            <p class="hero-eyebrow">Davenport, Iowa · Quad Cities · Bettendorf · Moline</p>
+            <h2>Expert Tree &amp; Lawn Care,<br><span class="accent">Rooted in the Quad Cities</span></h2>
+            <p class="hero-tagline">Beyond the Blade · 20 Years of Proven Landscape Mastery</p>
+            <p class="hero-subtitle">Specialized tree work and science-based lawn health care for Davenport, Bettendorf, and the greater Quad Cities. Two decades of field-tested experience in Mississippi River Valley soil and storm conditions.</p>
+            <div class="hero-buttons">
+                <a href="tel:5633201948" class="hero-btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    Call (563) 320-1948
+                </a>
+                <a href="mailto:c.josvanger@gmail.com?subject=Free%20Estimate%20Request%20-%20River%27s%20Edge&body=Hi%20Colby%2C%0A%0AI%27d%20like%20to%20request%20a%20free%20estimate.%0A%0AName%3A%0AAddress%2FCity%3A%0APhone%3A%0AService%20interested%20in%20(tree%20work%2C%20lawn%20care%2C%20both)%3A%0ABrief%20description%20of%20what%20you%20need%3A%0A%0AThanks!" class="hero-btn-secondary">Request Free Estimate</a>
             </div>
-            <div class="stats">
-                <div class="stat-box">
-                    <div class="stat-number">20+</div>
-                    <div class="stat-label">Years</div>
+            <div class="guarantee-badge">✦ Satisfaction Guaranteed — We Make It Right</div>
+        </div>
+    </section>
+
+    <!-- TRUSTED / PROOF SECTION -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-header">
+                <p class="eyebrow">Why Quad Cities Homeowners Choose Us</p>
+                <h2 class="section-title">Trusted for Over 20 Years</h2>
+            </div>
+
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <div class="trust-stat-number">20+</div>
+                    <div class="trust-stat-label">Years of Service</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">1000+</div>
-                    <div class="stat-label">Happy Clients</div>
+                <div class="trust-stat">
+                    <div class="trust-stat-number">1,000+</div>
+                    <div class="trust-stat-label">Happy Clients</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">5.0★</div>
-                    <div class="stat-label">Rating</div>
+                <div class="trust-stat">
+                    <div class="trust-stat-number">5.0★</div>
+                    <div class="trust-stat-label">Rating</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Available</div>
+                <div class="trust-stat">
+                    <div class="trust-stat-number">24/7</div>
+                    <div class="trust-stat-label">Emergency Ready</div>
                 </div>
+            </div>
+
+            <p class="section-subtitle">Real Words from Real Neighbors</p>
+
+            <div class="trust-reviews">
+
+                <div class="trust-review">
+                    <span class="quote-mark">“</span>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Colby is AMAZING! He was prompt, honest, did exactly what we asked for at a fair price. Beat all of the competition. Everything was cleaned up and hauled away in record time.</p>
+                    <div class="review-name">— Jayne McDaniel</div>
+                </div>
+
+                <div class="trust-review">
+                    <span class="quote-mark">“</span>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Very professional and thoroughly explained what he was doing. Very polite and responsive to getting the job done on time. His quote was very reasonable and I highly recommend him for tree services.</p>
+                    <div class="review-name">— Gary B.</div>
+                </div>
+
+                <div class="trust-review">
+                    <span class="quote-mark">“</span>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">He was very polite and professional. Got in and did the job great. Would hire him again. Colby has done several jobs for me and all were done very well.</p>
+                    <div class="review-name">— Marty H.</div>
+                </div>
+
+            </div>
+
+            <div class="review-share-bar">
+                <h4>Read More Reviews · Leave a Review · Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link" aria-label="Read River's Edge reviews on Google" title="Google Reviews">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Visit River's Edge on Facebook" title="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Read River's Edge reviews on Yelp" title="Yelp">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.16 12.594l-1.844-.605c-1.484-.49-2.402.96-1.515 2.21l1.484 2.124c.43.62 1.336.605 1.778-.04.726-1.058 1.243-1.79 1.42-2.18.213-.51-.27-1.31-1.323-1.51zm-7.06 9.555l1.067-2.31c.696-1.504-.84-2.98-2.227-2.143l-2.343 1.413c-.578.345-.5 1.21.156 1.522 1.124.534 1.86.802 2.243.91.503.143 1.265-.236 1.103-1.392zm.003-9.61l.022-7.18c0-.706-.7-1.16-1.46-.96-2.36.62-4.07 1.41-4.948 2.33-.55.58-.39 1.59.31 2.05l5.5 3.62c.84.55 2.005.05 2.575-.86zM7.06 13.27l3.12-1.41c1.41-.64.96-2.7-.62-2.7l-2.6.07c-.79.02-1.27.74-.95 1.45.42.95.81 1.62 1.05 2 .27.41.92.45 1.27.13.07-.06.14-.12.21-.2.16-.16.41-.21.66-.16zm.06 4.6l1.55-2.18c.95-1.34-.32-3.07-1.83-2.51l-2.42.92c-.6.23-.69 1.03-.16 1.45 1.03.81 1.71 1.31 1.97 1.45.4.22 1.13.04.89-1.13z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Read River's Edge reviews on Angi (Angie's List)" title="Angi">
+                        Angi
+                    </a>
+                </div>
+            </div>
+
+            <div class="trust-cta-row">
+                <a href="mailto:c.josvanger@gmail.com?subject=Free%20Estimate%20Request%20-%20River%27s%20Edge&body=Hi%20Colby%2C%0A%0AI%27d%20like%20to%20request%20a%20free%20estimate.%0A%0AName%3A%0AAddress%2FCity%3A%0APhone%3A%0AService%20interested%20in%3A%0ADetails%3A%0A%0AThanks!" class="view-all-link">Get Your Free Estimate →</a>
             </div>
         </div>
     </section>
 
-    <section class="services-section">
+    <!-- SERVICES -->
+    <section class="services-section" id="services">
         <div class="container">
-            <h2 class="section-title">Our Professional Services</h2>
-            
+            <p class="eyebrow" style="text-align:center;">What We Do</p>
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Specialized Tree &amp; Lawn Health Care · Davenport &amp; the Quad Cities</p>
+
             <div class="services-grid">
+
+                <!-- Tree Services -->
                 <div class="service-card">
-                    <div class="service-icon">🌲</div>
-                    <h3>Complete Tree Services</h3>
-                    <ul>
-                        <li>Tree Trimming & Pruning</li>
-                        <li>Tree Removal</li>
-                        <li>Stump Grinding</li>
-                        <li>Cable Bracing</li>
-                        <li>Tree Health Assessment</li>
-                        <li>Disease & Pest Management</li>
-                        <li>24-Hour Emergency Service</li>
-                        <li>Storm Damage Response</li>
-                    </ul>
+                    <div class="service-card-body">
+                        <div class="service-icon">🌲</div>
+                        <h3>Signature Tree Care</h3>
+                        <ul>
+                            <li>Tree Trimming &amp; Pruning</li>
+                            <li>Tree Removal (large &amp; hazardous)</li>
+                            <li>Stump Grinding &amp; Removal</li>
+                            <li>Cable Bracing</li>
+                            <li>Tree Health Assessment</li>
+                            <li>Disease &amp; Pest Management</li>
+                            <li>Emerald Ash Borer Treatment</li>
+                            <li>24-Hour Emergency Tree Service</li>
+                            <li>Storm Damage Response</li>
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- Lawn Services -->
                 <div class="service-card">
-                    <div class="service-icon">🌱</div>
-                    <h3>Professional Lawn Care</h3>
-                    <ul>
-                        <li>Core Aeration (Spring & Fall)</li>
-                        <li>Grub Control & Prevention</li>
-                        <li>Mole Removal & Control</li>
-                        <li>Fertilization Programs</li>
-                        <li>Weed Control Treatments</li>
-                        <li>Overseeding Services</li>
-                        <li>Soil Health Analysis</li>
-                    </ul>
+                    <div class="service-card-body">
+                        <div class="service-icon">🌱</div>
+                        <h3>Lawn Vitality Program</h3>
+                        <ul>
+                            <li>Multi-Step Fertilization Programs</li>
+                            <li>Pre-Emergent &amp; Post-Emergent Weed Control</li>
+                            <li>Core Aeration (Iowa clay soil)</li>
+                            <li>Overseeding Services</li>
+                            <li>Soil Health Analysis</li>
+                            <li>Lawn Disease Diagnosis &amp; Treatment</li>
+                            <li>Grub &amp; Insect Control</li>
+                            <li>Crabgrass Prevention</li>
+                            <li>Custom Seasonal Schedules</li>
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- Property Plans -->
                 <div class="service-card">
-                    <div class="service-icon">⭐</div>
-                    <h3>Combo Care Packages</h3>
-                    <ul>
-                        <li>Lawn + Tree Care Bundles</li>
-                        <li>Seasonal Maintenance Plans</li>
-                        <li>Year-Round Property Care</li>
-                        <li>Customized Schedules</li>
-                        <li>Cost-Saving Packages</li>
-                        <li>Priority Scheduling</li>
-                        <li>Complete Property Health</li>
-                    </ul>
+                    <div class="service-card-body">
+                        <div class="service-icon">⭐</div>
+                        <h3>Full Property Plans</h3>
+                        <ul>
+                            <li>Lawn + Tree Care Bundles</li>
+                            <li>Seasonal Maintenance Plans</li>
+                            <li>Year-Round Property Care</li>
+                            <li>Customized Schedules</li>
+                            <li>Cost-Saving Packages</li>
+                            <li>Priority Scheduling</li>
+                            <li>Complete Property Health</li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
 
-            <div class="exclusions">
-                <h3>⚠️ Please Note:</h3>
-                <p><strong>We specialize in tree and lawn health services.</strong> We do NOT offer lawn mowing or hedge trimming. Our focus is on specialized care that keeps your trees healthy and your lawn thriving from the roots up.</p>
+            <!-- BEYOND THE BLADE callout -->
+            <div class="beyond-blade">
+                <p class="eyebrow">What Sets Us Apart</p>
+                <h3>Beyond the Blade: <span class="highlight">Specialized Care for the Quad Cities</span></h3>
+                <p>At River's Edge, we don't just maintain landscapes; <strong>we fortify them.</strong> We specialize exclusively in the health and longevity of your trees and turf — <strong>we do not mow or trim hedges.</strong> By moving beyond the blade, we focus our 20 years of field-tested experience on what truly matters: structural safety and biological vitality.</p>
             </div>
         </div>
     </section>
 
-    <section class="combo-section">
+    <!-- FACTS SECTION -->
+    <section class="facts-section">
         <div class="container">
-            <h2>Save with Our Combo Packages</h2>
-            <p>Get comprehensive tree and lawn care at discounted rates. Our combo packages provide year-round maintenance that keeps your entire property healthy and beautiful.</p>
-            <a href="tel:563-555-0100" class="cta-button">Get Your Free Estimate Today</a>
-            
+            <p class="eyebrow" style="text-align:center;">Local Knowledge</p>
+            <h2 class="section-title">Did You Know?</h2>
+            <p class="section-subtitle">Quad Cities Tree &amp; Lawn Facts</p>
+            <div class="facts-grid">
+
+                <div class="fact-card">
+                    <div class="fact-number">01</div>
+                    <p class="fact-text"><strong>Emerald Ash Borer</strong> has devastated millions of ash trees across Iowa and Illinois — making early detection and treatment critical for Davenport and Quad Cities homeowners.</p>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-number">02</div>
+                    <p class="fact-text"><strong>A single mature tree</strong> can absorb up to 48 pounds of CO₂ per year and provide enough oxygen for two people — making proper tree care an investment in your environment.</p>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-number">03</div>
+                    <p class="fact-text"><strong>Healthy, well-maintained trees</strong> can increase property value by 10–20%, according to the USDA Forest Service — one of the best returns any homeowner can make.</p>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-number">04</div>
+                    <p class="fact-text"><strong>Iowa's growing season</strong> spans roughly 150–170 frost-free days, making spring and fall the most critical windows for lawn treatment and tree health care in the Quad Cities.</p>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-number">05</div>
+                    <p class="fact-text"><strong>Mississippi River Valley proximity</strong> creates unique soil moisture and frost patterns throughout Davenport and the Quad Cities — conditions that directly impact how your lawn and trees respond to treatment.</p>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-number">06</div>
+                    <p class="fact-text"><strong>Dutch Elm Disease</strong> wiped out millions of elm trees across the Midwest and remains an active threat today. Routine health assessments are the best line of defense.</p>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-number">07</div>
+                    <p class="fact-text"><strong>Native Iowa clay soils</strong> tend to be heavy and compacted, which can cause nutrient lock-out and root stress — making professional core aeration and soil health analysis essential for a thriving lawn.</p>
+                </div>
+
+                <div class="fact-card">
+                    <div class="fact-number">08</div>
+                    <p class="fact-text"><strong>Neglected trees decline fast.</strong> A healthy oak or maple can live 100–300+ years, but without proper pruning, pest management, and structural support, decline can begin in just a few seasons.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CARE PLANS -->
+    <section class="plans-section">
+        <div class="container">
+            <p class="eyebrow">Year-Round Care</p>
+            <h2 class="section-title">Year-Round Property Care Plans</h2>
+            <p class="plans-subtitle-large">Tailored to Your Property — Built Around You</p>
+            <p class="lead">Your trees and turf share the same soil; they should share the same care. By integrating your property's needs into one custom plan, we ensure <strong>total landscape health</strong> with priority scheduling and bundled savings. It's smarter care for a more vibrant home.</p>
+            <a href="mailto:c.josvanger@gmail.com?subject=Free%20Estimate%20Request%20-%20River%27s%20Edge&body=Hi%20Colby%2C%0A%0AI%27d%20like%20to%20request%20a%20free%20estimate.%0A%0AName%3A%0AAddress%2FCity%3A%0APhone%3A%0ABest%20way%20to%20reach%20me%3A%0AService%20interested%20in%20(tree%20work%2C%20lawn%20care%2C%20property%20plan)%3A%0ABrief%20description%3A%0A%0AThanks!" class="cta-button">Request Your Free Estimate</a>
+
             <div class="discount-box">
-                <h4>🇺🇸 SPECIAL DISCOUNTS AVAILABLE</h4>
-                <p>We proudly offer discounts for U.S. Veterans, Active-Duty Military, and active Church Members. Thank you for your service and dedication to our community!</p>
+                <h4>Special Discounts Available</h4>
+                <div class="green-rule"></div>
+                <p>We proudly offer discounts for <strong>U.S. Veterans</strong>, <strong>Active-Duty Military</strong>, and active <strong>Church Members</strong>. It's our small way of saying thank you for your service and your dedication to this community.</p>
             </div>
         </div>
     </section>
 
-    <section class="reviews-section">
-        <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-header">
-                        <span class="review-name">Jayne McDaniel</span>
-                        <span class="review-stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">"Colby is AMAZING! He was prompt, honest, did exactly what we asked for at a fair price. Beat all of the competition. Everything was cleaned up and hauled away in record time."</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <span class="review-name">Gary B.</span>
-                        <span class="review-stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">"Very professional and thoroughly explained what he was doing. Very polite and responsive to getting the job done on time. His quote was very reasonable and I highly recommend him for tree services."</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <span class="review-name">Rick H.</span>
-                        <span class="review-stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">"Colby has done several jobs for me and all were done very well."</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <span class="review-name">Marty H.</span>
-                        <span class="review-stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">"He was very polite and professional. Got in and did the job great. Would hire him again."</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <span class="review-name">Dustin Jungvirt</span>
-                        <span class="review-stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">"Great company and fair amazing work."</p>
-                </div>
-
-                <div class="review-card">
-                    <div class="review-header">
-                        <span class="review-name">Nayo L.</span>
-                        <span class="review-stars">★★★★★</span>
-                    </div>
-                    <p class="review-text">"Great service. Highly recommend."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- OUR STORY -->
     <section class="story-section">
         <div class="container">
-            <h2 class="section-title">Our Story</h2>
+            <p class="eyebrow" style="text-align:center;">About Us</p>
+            <h2 class="section-title">River's Edge: We Go Beyond the Blade</h2>
+            <p class="section-subtitle">A Local, Family-Owned Quad Cities Business</p>
+
             <div class="story-content">
-                <p>My roots run deep in the Quad Cities. For the first ten years of my life, I lived on a farm, where the outdoors simply became a part of me, and a well-kept lawn felt like a natural extension of home. What inspired me to start my own business was the unmatched work ethic demonstrated by my father, who owned and operated successful businesses. Additionally, my stepfather, a certified arborist, showed me the importance of combining that work ethic with specialized knowledge. And, I must give credit to my mother, whose absolute love for nature, animals, and all things green was a constant source of inspiration. Her 'magical touch' with gardening, trees, and especially flowers, showed me the beauty, importance, and pride in nurturing what surrounds you.</p>
 
-                <p>Growing up in the Quad City area, I remember Sunday mornings, the sound of lawnmowers, the sense of community as everyone took pride in their homes and lawns. Majestic oaks and vibrant green lawns weren't just scenery; they represented the pride in a well-kept home and a well-kept lawn, a feeling that resonated throughout the entire neighborhood. It wasn't just about trees and grass; it was about the feeling of home, right here in the Quad Cities.</p>
+                <p class="story-intro">My connection to the land isn't a hobby — it's in my blood.</p>
 
-                <p>Seeing the impact my parents and stepfather had on their surroundings and community, I decided to dedicate myself to learning the best practices in arboriculture and landscaping. To further enhance my expertise, I am currently studying to become a certified arborist, ensuring that River's Edge always provides the most knowledgeable and up-to-date care. I started helping neighbors, and quickly realized this wasn't just a job, it was a way to truly serve my community.</p>
+                <div class="story-block">
+                    <h3><span class="story-icon">🌳</span> The Roots of the Story</h3>
+                    <p>Growing up on a farm in the Quad Cities, I learned early on that the outdoors is a natural extension of the home. I spent my Sundays listening to the hum of the neighborhood and watching the majestic oaks stand guard over vibrant green lawns. That wasn't just grass and wood; it was the pride of our community.</p>
+                </div>
 
-                <p>That's how River's Edge was born. It's built on a foundation of integrity, expertise, and a genuine love for the outdoors. We take immense pride in our craftsmanship, ensuring every tree is trimmed with precision, and every lawn is cared for with pride. Our greatest satisfaction comes from seeing the smiles on our customers' faces, knowing we've helped enhance the beauty and safety of their homes.</p>
+                <div class="story-block">
+                    <h3><span class="story-icon">⚒️</span> A Legacy of Grit &amp; Science</h3>
+                    <p>River's Edge wasn't built in a day. It was built on the foundation of a family work ethic and a deep respect for nature:</p>
+                    <div class="story-pillars">
+                        <div class="pillar-card">
+                            <h4>The Work Ethic</h4>
+                            <p>Inspired by my father's successful business ventures and "never-quit" attitude.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h4>The Science</h4>
+                            <p>Mentored by my stepfather, a Certified Arborist, who taught me the vital importance of specialized knowledge.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h4>The Magic</h4>
+                            <p>Guided by my mother's "magical touch" with all things green, showing me the beauty of nurturing what surrounds us.</p>
+                        </div>
+                    </div>
+                </div>
 
-                <p>As a local family-owned business, we're deeply invested in the well-being of our community. We strive to not only provide exceptional service but also build lasting relationships with our clients. At River's Edge, we adhere to the highest level of customer satisfaction, prioritizing the health and safety of our clients. We're not just maintaining landscapes; we're nurturing the heart of the Quad Cities, one yard at a time. That's a commitment we take pride in.</p>
+                <div class="story-block">
+                    <h3><span class="story-icon">🪓</span> Why We're Different</h3>
+                    <p>You'll notice something missing from our trucks: <strong>Mowers.</strong></p>
+
+                    <div class="no-mowers-callout">
+                        <div class="callout-tag">No Mowers · No Hedges</div>
+                        <div class="callout-headline">Just <span>Health.</span></div>
+                    </div>
+
+                    <p>We don't do "haircuts." We provide <strong>specialized fortification.</strong> With over 20 years of field-tested experience in Davenport and the Quad Cities, we've moved <em>Beyond the Blade</em> to focus on the biological vigor and structural integrity of your property. We are currently advancing our expertise through arborist certification to ensure your landscape receives the most modern, knowledgeable care available in the 52804 area and beyond.</p>
+                </div>
+
+                <div class="story-block">
+                    <h3><span class="story-icon">🤝</span> Our 20-Year Promise</h3>
+                    <p>When you choose River's Edge, you aren't just hiring a service — you're partnering with a local, family-owned business deeply invested in the resilience and majesty of our local canopy.</p>
+                    <ul class="promise-list">
+                        <li>
+                            <span class="check">✓</span>
+                            <span><strong>Total Vigor</strong> — We command the health of your soil and trees.</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span><strong>Absolute Security</strong> — We ensure your property is safe and storm-ready.</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span><strong>Proven Knowledge</strong> — 20 years of knowing exactly what the Quad City climate demands.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="story-closing">
+                    <p>We don't just maintain landscapes.<br>We <span class="accent">nurture the heart of the Quad Cities</span>, one yard at a time.</p>
+                    <a href="mailto:c.josvanger@gmail.com?subject=Free%20Property%20Health%20Assessment%20-%20River%27s%20Edge&body=Hi%20Colby%2C%0A%0AI%27d%20like%20to%20request%20a%20free%20property%20health%20assessment.%0A%0AName%3A%0AAddress%2FCity%3A%0APhone%3A%0AWhat%20I%27m%20noticing%20on%20my%20property%3A%0A%0AThanks!" class="cta-button">Request Your Free Assessment</a>
+                </div>
+
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <h2>River's Edge Tree & Lawn Care</h2>
-            <p>Serving Davenport and the Quad Cities</p>
-            <p>📞 24/7 Emergency Service Available</p>
-            <p style="margin-top: 1.5rem; opacity: 0.8;">©Copyright River's Edge. All rights reserved.</p>
+            <div class="footer-logo">River's Edge</div>
+            <div class="footer-tagline">Beyond the Blade · 20 Years of Proven Landscape Mastery</div>
+            <div class="green-rule"></div>
+            <p>Serving Davenport, Bettendorf, Moline, Rock Island &amp; the Quad Cities</p>
+            <p><a href="tel:5633201948">📞 (563) 320-1948</a></p>
+            <p>24/7 Emergency Tree Service Available</p>
+
+            <div class="footer-social">
+                <a href="#" aria-label="Google Reviews" title="Google Reviews">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                </a>
+                <a href="#" aria-label="Facebook" title="Facebook">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="#" aria-label="Yelp" title="Yelp">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.16 12.594l-1.844-.605c-1.484-.49-2.402.96-1.515 2.21l1.484 2.124c.43.62 1.336.605 1.778-.04.726-1.058 1.243-1.79 1.42-2.18.213-.51-.27-1.31-1.323-1.51zm-7.06 9.555l1.067-2.31c.696-1.504-.84-2.98-2.227-2.143l-2.343 1.413c-.578.345-.5 1.21.156 1.522 1.124.534 1.86.802 2.243.91.503.143 1.265-.236 1.103-1.392zm.003-9.61l.022-7.18c0-.706-.7-1.16-1.46-.96-2.36.62-4.07 1.41-4.948 2.33-.55.58-.39 1.59.31 2.05l5.5 3.62c.84.55 2.005.05 2.575-.86zM7.06 13.27l3.12-1.41c1.41-.64.96-2.7-.62-2.7l-2.6.07c-.79.02-1.27.74-.95 1.45.42.95.81 1.62 1.05 2 .27.41.92.45 1.27.13.07-.06.14-.12.21-.2.16-.16.41-.21.66-.16zm.06 4.6l1.55-2.18c.95-1.34-.32-3.07-1.83-2.51l-2.42.92c-.6.23-.69 1.03-.16 1.45 1.03.81 1.71 1.31 1.97 1.45.4.22 1.13.04.89-1.13z"/></svg>
+                </a>
+                <a href="#" aria-label="Angi (Angie's List)" title="Angi">Angi</a>
+            </div>
+
+            <p class="service-area">Service area: Davenport, IA (52804) · Bettendorf, IA · LeClaire, IA · Eldridge, IA · Pleasant Valley, IA · Blue Grass, IA · Moline, IL · Rock Island, IL · East Moline, IL · Milan, IL</p>
+            <p class="copyright">© River's Edge Tree &amp; Lawn Care. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- STICKY FLOATING CALL BUTTON -->
+    <a href="tel:5633201948" class="sticky-call" aria-label="Call River's Edge — 563-320-1948">
+        <span class="sticky-call-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+        </span>
+        Call Now
+    </a>
+
 </body>
 </html>
